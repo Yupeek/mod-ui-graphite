@@ -259,7 +259,7 @@ class GraphFactory(object):
                 GraphiteMetric.join(self.prefix, self.hostname, self.cfg.graphite_data_source)),
             service=GraphiteMetric.normalize(GraphiteMetric.join(self.servicename, self.postfix)),
             end=graph_end,
-            start=self.graph_start,
+            start=graph_start,
         )
 
 
